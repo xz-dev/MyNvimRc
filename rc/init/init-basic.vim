@@ -1,5 +1,5 @@
 " 打印ASCII字符喵
-echo ">^.^<"
+"echo ">^.^<"
 
 " 基础设置
 set nocompatible		" be iMproved, required
