@@ -12,27 +12,33 @@ let g:neoformat_basic_format_retab = 1
 " 启用尾随空格的修剪，
 let g:neoformat_basic_format_trim = 1
 
+" 保存代码时自动格式化
+"augroup fmt
+"  autocmd!
+"  autocmd BufWritePre * undojoin | Neoformat
+"augroup END
+
 " Python
 let g:neoformat_python_autopep8 = {
-            \ 'exe': 'autopep8',
-            \ 'args': ['-s 4', '-E'],
-            \ 'stdin': 1,
-            \ 'env': ["DEBUG=1"],
-            \ 'valid_exit_codes': [0, 23],
-            \ 'no_append': 1,
-            \ }
+	\ 'exe': 'autopep8',
+	\ 'args': ['-s 4', '-E'],
+	\ 'stdin': 1,
+	\ 'env': ["DEBUG=1"],
+	\ 'valid_exit_codes': [0, 23],
+	\ 'no_append': 1,
+	\ }
 
 " 配置启用的格式化程序
 let g:neoformat_enabled_python = ['autopep8', 'yapf', 'docformatter']
 
 " C
 let g:neoformat_c_uncrustify = {
-            \ 'exe': 'uncrustify',
-            \ 'args': ['-q', '-l C'],
-            \ 'stdin': 1,
-            \ 'env': ["DEBUG=1"],
-            \ 'valid_exit_codes': [0, 23],
-            \ 'no_append': 1,
-            \ }
+	\ 'exe': 'uncrustify',
+	\ 'args': ['-q', '-l C'],
+	\ 'stdin': 1,
+	\ 'env': ["DEBUG=1"],
+	\ 'valid_exit_codes': [0, 23],
+	\ 'no_append': 1,
+	\ }
 
 let g:neoformat_enabled_c = ['uncrustify']

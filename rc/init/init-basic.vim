@@ -1,3 +1,7 @@
+" 打印ASCII字符喵
+echo ">^.^<"
+
+" 基础设置
 set nocompatible		" be iMproved, required
 set mouse=a			" 鼠标模式
 set laststatus=2
