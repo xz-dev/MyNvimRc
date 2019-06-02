@@ -1,0 +1,1 @@
+/home/xz/.vim/plugged/onedark.vim/colors/onedark.vim
