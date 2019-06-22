@@ -4,7 +4,10 @@
 call plug#begin('~/.vim/plugged')
 
 " fcitx 自动切换
-Plug 'vim-scripts/fcitx.vim'
+"Plug 'vim-scripts/fcitx.vim'
+" ibus 模式自动切换
+Plug 'h-youhei/vim-ibus'
+source ~/.config/nvim/rc/plugin/vim-ibus.vim
 
 " 界面显示
 " 主题
