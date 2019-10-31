@@ -32,7 +32,7 @@ nnoremap <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
-		exec "!g++ % -o %<"
+		exec "!g++ % -o %< -lm"
 		exec "!time ./%<"
 	elseif &filetype == 'cpp'
 		exec "!g++ % -o %<"

@@ -38,6 +38,7 @@ source ~/.config/nvim/rc/plugin/indentLine.vim
 
 " MarkDown预览
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
+source ~/.config/nvim/rc/plugin/markdown-preview.vim
 
 " 强迫症修复
 
@@ -70,7 +71,7 @@ source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 
 " 代码格式化
 Plug 'sbdchd/neoformat'
-source ~/.config/nvim/rc/plugin/neoformat.vim
+source ~/.config/nvim/rc/plugin/neoformat/neoformat.vim
 
 " Initialize plugin system
 call plug#end()

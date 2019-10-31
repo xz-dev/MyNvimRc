@@ -35,7 +35,7 @@ let g:neoformat_enabled_python = ['autopep8']
 " C
 let g:neoformat_c_uncrustify = {
 	\ 'exe': 'uncrustify',
-	\ 'args': ['-q', '-l C'],
+	\ 'args': ['-c ~/.config/nvim/rc/plugin/neoformat/linux-indent.cfg', '-q', '-l C'],
 	\ 'stdin': 1,
 	\ }
 
