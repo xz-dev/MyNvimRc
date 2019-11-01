@@ -66,7 +66,7 @@ source ~/.config/nvim/rc/plugin/auto-pairs.vim
 
 " 编程语言语法相关
 " 语法补全
-Plug 'neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'}
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 
 " 代码格式化
