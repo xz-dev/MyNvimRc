@@ -20,17 +20,15 @@ let g:neoformat_basic_format_trim = 1
 "augroup END
 
 " Python
-let g:neoformat_python_autopep8 = {
-	\ 'exe': 'autopep8',
-	\ 'args': ['-s 4', '-E'],
+let g:neoformat_python_yapf = {
+	\ 'exe': 'yapf',
 	\ 'stdin': 1,
-	\ 'env': ["DEBUG=1"],
-	\ 'valid_exit_codes': [0, 23],
+	\ 'args': ['--style pep8'],
+	\ 'valid_exit_codes': [0],
 	\ 'no_append': 1,
 	\ }
-
 " 配置启用的格式化程序
-let g:neoformat_enabled_python = ['autopep8']
+let g:neoformat_enabled_python = ['yapf']
 
 " C
 let g:neoformat_c_uncrustify = {
