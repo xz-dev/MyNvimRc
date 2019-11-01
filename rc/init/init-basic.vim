@@ -10,8 +10,8 @@ filetype plugin on
 set pastetoggle=<F9> " turn off automatic indentation
 syntax enable
 "set background=dark " colorscheme solarized
-" 默认4空格缩进
-set ts=4
+set sw=4  " 默认4空格缩进
+set ts=4  " TAB字符占4空格位置
 set expandtab
 set autoindent
 set t_Co=256
