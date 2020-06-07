@@ -1,8 +1,9 @@
 " 自动启用
 let g:indentLine_enabled = 1
 
-" 支持制表符缩进代码
+" 支持空格缩进代码
 set list lcs=tab:\|\ 
+
 " 更改缩进字符
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 

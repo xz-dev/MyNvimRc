@@ -6,8 +6,8 @@ call plug#begin('~/.vim/plugged')
 " fcitx 自动切换
 "Plug 'vim-scripts/fcitx.vim'
 " ibus 模式自动切换
-Plug 'h-youhei/vim-ibus'
-source ~/.config/nvim/rc/plugin/vim-ibus.vim
+"Plug 'h-youhei/vim-ibus'
+"source ~/.config/nvim/rc/plugin/vim-ibus.vim
 
 " 界面显示
 " 主题
@@ -68,6 +68,11 @@ source ~/.config/nvim/rc/plugin/auto-pairs.vim
 " 语法补全
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
+
+" Python IDE
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+source ~/.config/nvim/rc/plugin/pymode.vim
+
 
 " 代码格式化
 Plug 'sbdchd/neoformat'

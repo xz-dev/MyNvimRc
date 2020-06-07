@@ -12,7 +12,7 @@ syntax enable
 "set background=dark " colorscheme solarized
 set sw=4  " 默认4空格缩进
 set ts=4  " TAB字符占4空格位置
-set expandtab
+"set expandtab  " 空格替换 TAB
 set autoindent
 set t_Co=256
 "set foldmethod=syntax         " 使用语法高亮定义代码折叠
