@@ -11,14 +11,14 @@ call plug#begin('~/.vim/plugged')
 
 " 界面显示
 " 主题
-Plug 'joshdick/onedark.vim'
-source ~/.config/nvim/rc/plugin/onedark.vim.vim
-
-" onedark 主题推荐的代码高亮
-Plug 'sheerun/vim-polyglot'
+Plug 'morhetz/gruvbox'
+autocmd vimenter * colorscheme gruvbox
 
 " 曾经使用的主题
+"Plug 'joshdick/onedark.vim'
+"source ~/.config/nvim/rc/plugin/onedark.vim.vim
 "Plug 'altercation/vim-colors-solarized'
+"Plug 'sheerun/vim-polyglot'
 "source ~/.config/nvim/rc/plugin/vim-colors-solarized.vim
 
 Plug 'vim-airline/vim-airline'
@@ -66,7 +66,7 @@ source ~/.config/nvim/rc/plugin/auto-pairs.vim
 
 " 编程语言语法相关
 " 语法补全
-Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 
 " Python IDE
