@@ -32,11 +32,11 @@ nnoremap <F5> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
 	exec "w"
 	if &filetype == 'c'
-		exec "!g++ % -o %< -lm"
-		exec "!time ./%<"
+		exec "!g++ % -o /tmp/%< -lm"
+		exec "!time /tmp/%<"
 	elseif &filetype == 'cpp'
-		exec "!g++ % -o %<"
-		exec "!time ./%<"
+		exec "!g++ % -o /tmp/%<"
+		exec "!time /tmp/%<"
 	elseif &filetype == 'java'
 		exec "!javac %"
 		exec "!time java %<"
