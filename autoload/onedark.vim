@@ -1,1 +1,0 @@
-/home/xz/.vim/plugged/onedark.vim/autoload/onedark.vim

@@ -73,6 +73,8 @@ source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 source ~/.config/nvim/rc/plugin/pymode.vim
 
+" Vim-GO 插件
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 " 代码格式化
 Plug 'sbdchd/neoformat'
