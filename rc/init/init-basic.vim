@@ -1,5 +1,14 @@
 "echo ">^.^<"        " 打印ASCII字符喵
 
+" 禁止使用方向键
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+imap <Left> <Nop>
+imap <Right> <Nop>
+imap <Up> <Nop>
+imap <Down> <Nop>
 " 基础设置
 set nocompatible     " be iMproved, required
 set mouse=a          " 鼠标模式
