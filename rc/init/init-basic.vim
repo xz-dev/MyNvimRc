@@ -47,7 +47,6 @@ func! CompileRunGcc()
 	elseif &filetype == 'html'
 		exec "!firefox % &"
 	elseif &filetype == 'go'
-		exec "!go build %"
 		exec "!time go run %"
 	elseif &filetype == 'mkd'
 		exec "!~/.vim/markdown.pl % > %.html &"
