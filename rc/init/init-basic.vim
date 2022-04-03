@@ -9,6 +9,10 @@ imap <Left> <Nop>
 imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
+" Switch buffers
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
 " 基础设置
 set nocompatible     " be iMproved, required
 set mouse=a          " 鼠标模式
@@ -21,7 +25,7 @@ syntax enable
 "set background=dark " colorscheme solarized
 set sw=4  " 默认4空格缩进
 set ts=4  " TAB字符占4空格位置
-"set expandtab  " 空格替换 TAB
+set expandtab  " 空格替换 TAB
 set autoindent
 set t_Co=256
 "set foldmethod=syntax         " 使用语法高亮定义代码折叠
@@ -46,13 +50,16 @@ func! CompileRunGcc()
 	elseif &filetype == 'cpp'
 		exec "!g++ % -o /tmp/%<"
 		exec "!time /tmp/%<"
+	elseif &filetype == 'rs'
+		exec "!rustc % -o /tmp/%<"
+		exec "!time /tmp/%<"
 	elseif &filetype == 'java'
 		exec "!javac %"
 		exec "!time java %<"
 	elseif &filetype == 'sh'
 		:!time bash %
 	elseif &filetype == 'python'
-		exec "!time python3 %"
+		exec "!time python3 \'%\'"
 	elseif &filetype == 'html'
 		exec "!firefox % &"
 	elseif &filetype == 'go'

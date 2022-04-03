@@ -4,7 +4,7 @@ map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 " 设置宽度
 let NERDTreeAutoCenter=1
-let NERDTreeWinSize=25
+let NERDTreeWinSize=45
 " 是否显示隐藏文件
 let NERDTreeShowHidden=1
 " 在终端启动vim时，共享NERDTree
