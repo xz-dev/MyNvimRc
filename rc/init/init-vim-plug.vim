@@ -73,6 +73,12 @@ source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 source ~/.config/nvim/rc/plugin/pymode.vim
 
+" Other Code File
+Plug 'sheerun/vim-polyglot'
+
+" rust.vim 
+Plug 'rust-lang/rust.vim'
+
 " Vim-GO 插件
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 

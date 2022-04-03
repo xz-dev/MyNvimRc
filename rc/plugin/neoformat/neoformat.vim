@@ -20,6 +20,8 @@ let g:neoformat_basic_format_trim = 1
 "augroup END
 
 " Python
+" 配置启用的格式化程序
+let g:neoformat_enabled_python = ['yapf']
 let g:neoformat_python_yapf = {
 	\ 'exe': 'yapf',
 	\ 'stdin': 1,
@@ -27,13 +29,10 @@ let g:neoformat_python_yapf = {
 	\ 'valid_exit_codes': [0],
 	\ 'no_append': 1,
 	\ }
-" 配置启用的格式化程序
-let g:neoformat_enabled_python = ['yapf']
 
 " C
+let g:neoformat_enabled_c = ['uncrustify']
 let g:neoformat_c_uncrustify = {
 	\ 'exe': 'uncrustify',
 	\ 'args': ['-l C', '-c ~/.config/nvim/rc/plugin/neoformat/linux-indent.cfg', '-q', '-f'],
 	\ }
-
-let g:neoformat_enabled_c = ['uncrustify']
