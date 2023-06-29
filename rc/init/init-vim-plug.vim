@@ -70,8 +70,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 source ~/.config/nvim/rc/plugin/coc.nvim/coc.nvim.vim
 
 " Python IDE
-Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
-source ~/.config/nvim/rc/plugin/pymode.vim
+"Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+"source ~/.config/nvim/rc/plugin/pymode.vim
+
+" Python jedi
+Plug 'davidhalter/jedi-vim'
 
 " Other Code File
 Plug 'sheerun/vim-polyglot'
@@ -86,5 +89,8 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'sbdchd/neoformat'
 source ~/.config/nvim/rc/plugin/neoformat/neoformat.vim
 
-" Initialize plugin system
+" fzf.vim
+Plug 'junegunn/fzf.vim'
+source ~/.config/nvim/rc/plugin/fzf.vim
+
 call plug#end()
